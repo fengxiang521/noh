@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>战役</title>
+		<link href="animate.css" type="text/css" rel="stylesheet"/> 
+		<script>
+			function change(){
+				setTimeout(
+					function(){
+						
+						var elent_2=document.getElementById("main_2");
+						elent_2.style.backgroundImage="url(img/小区/对话框5.png)";
+						var elent_3=document.getElementById("main_3");
+						elent_3.innerHTML="老头子，我已经叫120了。喝点热水吧."
+					},2000);
+					setTimeout(function(){
+						var elent_1=document.getElementById("main_1");
+						elent_1.style.backgroundImage="url(img/小区/返回.png)";
+						elent_1.onclick=function f(){
+							window.location.href="首页.html";
+						}
+					},3500)
+			}
+		</script>
+	</head>
+	<body onload="change()">
+		<div >
+			<div id="main" class="animated bounceIn">
+				<div id="main_1" class="animated pulse" style="width: 100px;height: 100px;text-align: center;font-size: 60px;float: right;background-image: url(img/小区/空白1.png);background-size: 100px 100px;"></div>
+				<div id="main_2" style="width: 240px; height: 130px;background-image: url(img/小区/空白1.png);background-size: 240px 130px;margin-top: 500px;margin-left: 280px;position: absolute;">
+					<div id="main_3" style="font-size: 20px;margin-left:20px ;margin-top: 30px;"></div>
+				</div>
+			<audio id="audio" src="music/咳嗽音效.mp3" autoplay="autoplay"></audio>
+		</div>
+		</div>
+		
+	</body>
+	<style>
+		body{
+			margin: 0;
+		}
+		#main{
+			background-image: url("img/小区/卧室.png");
+			background-size: 640px 1030px;
+			width: 640px;
+			height: 1030px;
+			animation-duration: 0.5s;
+		}
+		#main_1{
+			animation-duration: 1.5s;
+			animation-iteration-count:infinite ;
+		}
+	</style>
+</html>

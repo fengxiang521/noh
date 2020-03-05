@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head style="margin: 0px;">
+		<meta charset="UTF-8">
+		<title>战役</title>
+		<link  href="test.css" type="text/css"/>
+		<link href="animate.css" type="text/css"/ rel="stylesheet">
+		<script>
+			function change_1(){
+				if(document.referrer=="http://127.0.0.1:8020/%E6%88%98%E5%BD%B9/%E5%B0%8F%E5%8C%BA_2.html")
+					{
+						window.location.href="小区_1.html";
+					}
+				else if(document.referrer=="http://127.0.0.1:8020/%E6%88%98%E5%BD%B9/%E5%B0%8F%E5%8C%BA_1.html"){
+				}
+				else{
+					window.location.href="小区_2.html";
+				}
+				
+				
+			}
+			function change_2(){
+				if(document.referrer=="http://127.0.0.1:8020/%E6%88%98%E5%BD%B9/%E5%B0%8F%E5%8C%BA_1.html"){
+					var elent_1=document.getElementById("body_1_1_1");
+					var elent_2=document.getElementById("body_1_1_2");
+					var elent_3=document.getElementById("head_1");
+					elent_3.id="head";
+					elent_3.className="head_X";
+					var elent_4=document.getElementById("head_2");
+					elent_4.innerHTML="点击这里翻页";
+					var elent_5=document.getElementById("body");
+					elent_5.style.backgroundImage="url(img/小区/3.png)";
+					var elent_6=document.getElementById("car").src="img/小区/救护车.png";
+					setTimeout(function(){
+						var elent_6=document.getElementById("car");
+						elent_6.className="car_2";
+					}, 1000);
+					setTimeout(function(){
+						var elent_6=document.getElementById("car");
+						elent_6.className="car_3";
+					}, 2000);
+					setTimeout(function(){
+						var elent_6=document.getElementById("car");
+						elent_6.className="car_4";
+					}, 3000);
+					setTimeout(function(){
+						var elent_6=document.getElementById("car");
+						elent_6.src="img/小区/空白1.png"
+					}, 4000);
+				}
+				else if(document.referrer=="http://127.0.0.1:8020/%E6%88%98%E5%BD%B9/%E5%B0%8F%E5%8C%BA_2.html"){
+					var elent_5=document.getElementById("dianji");
+					elent_5.className="beijin_2";
+					var elent_7=document.getElementById("body");
+						elent_7.style.backgroundImage="url(img/小区/2.png)";
+						elent_7.style.backgroundSize="640px 1030px";
+					var elent_8=document.getElementById("tishi");
+					elent_8.innerText="点击另一个灯光";
+					setTimeout(function(){
+						var elent_6=document.getElementById("body");
+						elent_6.style.backgroundImage="url(img/小区/3.png)";
+						elent_6.style.backgroundSize="640px 1030px";
+					}, 2000);
+				}
+				else{
+					
+					setTimeout(function(){
+						var elent=document.getElementById("body");
+						elent.style.backgroundImage="url(img/小区/2.png)";
+						elent.style.backgroundSize="640px 1030px";
+						var elent_8=document.getElementById("tishi");
+					elent_8.innerText="点击灯光";
+					}, 2300);
+				}
+			}
+			function turn(){
+				window.location.href="医院.html";
+			}
+			function beijing(){
+				
+			}
+		</script>
+	</head>
+	<body onload="change_2()">
+		<audio src=></audio>
+		<div class="body" id="body">
+			<div id="tishi" class="animated pulse" style="font-size: 60px;font-family: 华文彩云;color: #FF0000; text-align: center;margin-top: 30px;animation-duration: 1.5s;animation-iteration-count:infinite ;">
+			</div>
+			
+				<div id="body_1" >
+				<div id="body_1_1">
+					<div style="height: 50px; width: 100%;">
+						<div id="head_1" class="animated pulse" onclick="turn()">
+							<div id="head_2" class="animated pulse" onclick="turn()"></div>
+						</div>
+					</div>					
+                   <div id="dianji" class="beijin_1" onclick="change_1()">  	   
+                   </div>
+					
+		</div>
+			</div>
+			<div id="bjing" style="position: absolute; bottom: 400px; height: 138px;width: 148px;margin-left: 220px;" class="animated fadeInUpBig">
+			<div id="wenzi" class="animated pulse" style="margin: 15px; width: auto;height: auto; font-family: 华文彩云; color: red; font-size: 20px;">
+			</div>
+			</div>
+			
+			<div style="width: 40px;height: 80px;">
+				<img id="car" src="img/小区/空白1.png" class="car_1" />
+			</div>
+		</div>
+	</body>
+	<style>
+		.car_1{
+			width: 220px;
+			height: 150px; 
+			margin-top:140px;
+			margin-left: 410px;
+		}
+		.car_2{
+			width: 220px;
+			height: 150px; 
+			margin-top:140px;
+			margin-left: 300px;
+		}
+		.car_3{
+			width: 220px;
+			height: 150px; 
+			margin-top:140px;
+			margin-left: 180px;
+		}
+		.car_4{
+			width: 220px;
+			height: 150px; 
+			margin-top:140px;
+			margin-left: 40px;
+		}
+		body{
+			margin: 0;
+		}
+		.body{
+				background-image: url("img/小区/1.png");
+				background-size: 640px 1030px;
+				width: 640px;
+				height: 1030px;
+				position: absolute;
+			}
+		#body_1_1{
+				animation: .25s, 100ms;
+			}
+		#body_1_1_2{
+				padding-left: 5px;
+				height: 128px;
+				width: 120px;
+				float: right;
+				background-image: url("img/小区/气泡框 (2).png");
+			}
+		#body_1_1_1{
+				margin-top: 10px;
+				font-family:"楷体";
+				font-size: 27px;
+				color:red;
+				align-content: center;
+				text-align:center;
+				margin-top: 15px;
+				}
+		.animated{
+					animation-duration:3s;
+				}
+				
+		#body_1_2{
+			width: 200px;
+			height: 400px;
+			padding-left: 220px;
+			position: absolute;
+			bottom: 0;
+		}
+		#bjing{
+			background: url("img/小区/背景.png");
+			animation-duration:2s;
+		}
+		#head{
+			background-image: url("img/小区/提示框.png");
+			float: right;
+			background-size: 304px 90px;
+			height: 90px; 
+			width: 304px;
+			animation-duration:3s ;
+			animation-iteration-count:infinite ;
+			animation-play-state: running;
+		}
+		#head_1{
+			animation-duration: 3s;
+			animation-iteration-count:infinite ;
+		}
+		#head_2{
+			font-family: '华文彩云';
+			font-size: 30px;
+			display: flex;
+			justify-content: center;
+			margin: 20px;
+			margin-top: 30px;
+			margin-left: 30px;
+			color: #FF0000;
+			animation-duration: 1s;
+			animation-iteration-count:infinite ;
+		}
+		.beijin_1{
+			margin-top: 200px;
+			margin-left: 240px;
+			height: 380px;
+			width: 400px;
+		}
+		.beijin_2{
+			margin-top: 100px;
+			margin-left: 2px;
+			height: 340px;
+			width: 200px;
+		}	
+	</style>
+</html>

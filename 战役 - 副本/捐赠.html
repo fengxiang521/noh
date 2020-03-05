@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link  href="animate.css" type="text/css" rel="stylesheet"/>
+		<title></title>
+		<script>
+			function change_1(){
+				setTimeout(function(){
+					var elent=document.getElementById("text");
+					elent.innerHTML="我也要帮助他们";
+					var elent_2=document.getElementById("tishi");
+					elent_2.innerHTML="点击气泡框";
+					var elent_1=document.getElementById("qiapao");
+					elent_1.onclick=function f(){
+						var elent_1=document.getElementById("text");
+					    elent_1.innerHTML="";
+						var elent_2=document.getElementById("main");
+						elent_2.style.backgroundImage="url(img/juanz/捐赠1.png)";
+						var elent_3=document.getElementById("qiapao");
+						elent_3.style.backgroundImage="url(img/小区/空白1.png)";
+						var elent_2=document.getElementById("tishi");
+					    elent_2.innerHTML="点击返回";
+					    setTimeout(function  () {
+					    	var elent_4=document.getElementById("body");
+					    elent_4.onclick=function demo(){
+					    	var elent_2=document.getElementById("main");
+					    	elent_2.style.backgroundImage="url(img/juanz/捐赠2.png)";
+					    	var elent_2=document.getElementById("tishi");
+					        elent_2.innerHTML="点击电视";
+					        var elent_3=document.getElementById("dianshi");
+					        var elent_5=document.getElementById("body");
+					        elent_5.onclick=function de(){
+					     	window.location.href="社区.html"
+					    }	
+					    }
+					    },1000)
+					}
+				},4000)
+			}
+		</script>
+	</head>
+	<body id="body" onload="change_1()">
+		<div id="main" style="width: 640px;height: 1030px;background-image: url(img/juanz/捐赠.jpg);background-size: 640px 1030px;position: absolute;">
+			<div id="tishi" class="animated pulse" style="align-content: center;font-family: '微软雅黑';font-size: 40px;text-align: center;width: 200px;height: 100px;margin-left: 40%;"></div>
+			<div id="dianshi" style="width: 390px;height: 280px;margin-top: 100px;margin-left: 140px;"></div>
+			<div id="qiapao" onclick="" class="animated rotateIn" style="width: 260px;height: 200px;background-size: 260px 200px;margin-top: 80px;margin-left: 240px;background-image:url(img/juanz/想象.png);">
+				<div id="text" class="animated pulse"></div>
+			</div>
+		</div>
+	</body>
+	<style>
+		body{
+			margin: 0;
+		}
+		#qiapao{
+			animation-delay: 2000ms;
+			animation-duration: 1.5s;
+			position: absolute;
+		}
+		#text{
+			margin-left: 31px;
+			margin-top: 74px;
+			position: absolute;
+			font-size: 30px;
+			color: cornflowerblue;
+		}
+		#tishi{
+			animation-duration: 1.5s;
+			animation-iteration-count:infinite ;
+		}
+	</style>
+</html>

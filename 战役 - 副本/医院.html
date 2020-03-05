@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>战役</title>
+		<link href="animate.css" type="text/css" rel="stylesheet"/> 
+		<script>
+			function change_1(){
+				window.location.href="医院办公室.html";
+			}
+			function change_2(){
+				var elent_1=document.getElementById("main");
+				elent_1.style.backgroundImage="url(img/医院/医院2.png)";
+			}
+			function change_3(){
+				var elent_1=document.getElementById("main");
+				elent_1.style.backgroundImage="url(img/医院/医院1.png)";
+			}
+			function change_4(){
+				var elent_1=document.getElementById("main");
+				elent_1.style.backgroundImage="url(img/医院/医院.png)";
+			}
+			function ani(){
+				
+				setTimeout(function(){
+				var elent_1=document.getElementById("main");
+				console.log("11111111111111");
+				elent_1.style.background="url(img/医院/医院1.png)";
+				elent_1.style.backgroundSize="640px 1030px";},2000);
+				setTimeout(function(){
+				var elent_1=document.getElementById("main");
+				console.log("222222222222222");
+				elent_1.style.background="url(img/医院/医院2.png)";
+				elent_1.style.backgroundSize="640px 1030px";},4000);
+				setTimeout(function(){
+				var elent_1=document.getElementById("main");
+				console.log("33333333333333");
+				elent_1.style.background="url(img/医院/医院.png)";
+				elent_1.style.backgroundSize="640px 1030px";},6000);
+				setTimeout(function(){
+				var elent_1=document.getElementById("main_2");
+				elent_1.style.background="url(img/医院/点击.png)";
+				elent_1.style.backgroundSize="80px 130px";
+				},7000);
+			}
+			
+		</script>
+	</head>
+	<body onload="ani()">
+		<div id="main" class="animated " onclick="change_2()">
+			
+			<div id="main_1" onclick="change_1()">
+				<div id="main_2" class="animated pulse"  style="width: 80px;height: 130px;background-image: url(img/小区/空白1.png);background-size: 80px 130px;margin-left: 5px;margin-top: 200px;animation-duration: 1.5s;animation-iteration-count:infinite ;"></div>
+			</div>
+		</div>
+	</body>
+	<style>
+		body{
+			margin: 0;
+		}
+		#main{
+			background: url(img/医院/医院.png);
+			background-size:640px 1030px;
+			height: 1030px;
+			width: 640px;
+			animation-duration: 2s;
+			position: absolute;
+		}
+		#main_1{
+			width:90px;
+			height: 650px;
+			padding-top:330px ;
+			padding-left: 45px;
+		}
+	</style>
+</html>

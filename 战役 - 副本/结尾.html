@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>		
+		<link  href="animate.css" type="text/css" rel="stylesheet"/>
+		<script>
+			function demo(){
+				setTimeout(function(){
+					var elent_1=document.getElementById("main_1");
+					elent_1.style.backgroundImage="url(img/结尾/文案.png)";
+					
+				},1000);
+				setTimeout(function(){
+					var elent_1=document.getElementById("main_1");
+					elent_1.style.backgroundImage="url(img/小区/空白1.png)";
+				},7000);
+				setTimeout(function(){
+					var elent_1=document.getElementById("main_1_2");
+					elent_1.style.backgroundImage="url(img/结尾/logo1.png)";
+					var elent_2=document.getElementById("main_2");
+					elent_2.onclick=function f(){
+						window.location.href="http://www.sun-ada.net/";
+					}
+				},7500)
+				
+			}
+		</script>
+	</head>
+	<body onload="demo()">
+		<div id="main" style="width: 640px;height: 1030px;background-size: 640px 1030px;background-image: url(img/结尾/结尾.png);">
+			<div id="main_1" class="animated bounceInDown" style="width: 100%;height: 150px;background-image: url(img/小区/空白1.png);background-size: 100% 180px;">
+				<div id="main_1_1" style="width: 30%;height: 180px;display: flex;float: left;">
+					<div id="main_1_1_1" style="width: 90px;height: 75px;background-color:#6495ED;background-size: 90px 80px;float: left;position: absolute;margin-left: 30px;margin-top: 20px;"></div>
+					<div id="main_1_1_2" style="width: 90px;height: 75px;background-image: url(img/结尾/logo3.png);background-size: 90px 80px;float: left;margin-top: 100px;position: absolute;margin-left: 30px;"></div>
+				</div>
+				<div id="main_1_2" class="animated bounceIn" style="width: 40%;height: 180px;display: flex;float: left;background-size: 100% 180px;"></div>
+				<div id="main_1_3" style="width: 30%;height: 180px;display: flex; float: right;	"></div>
+			</div>
+			<div id="main_2" class="animated bounceInRight" style="width: 200px;height: 50px;background-image: url(img/结尾/logo2.png);margin-top: 800px;background-size: 200px 50px;float: right;"></div>
+		</div>
+	</body>
+	<style>
+		body{
+			margin: 0;
+		}
+		#main_1{
+			animation-delay: 1s;
+			animation-duration: 1.5s;
+		}
+		#main_1_2{
+			animation-delay:7.5s;
+			animation-duration: 1.5s;
+		}
+		#main_2{
+			animation-delay: 8.5s;
+			animation-duration: 1.5s;
+		}
+	</style>
+</html>

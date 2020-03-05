@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link  href="animate.css" type="text/css" rel="stylesheet"/>
+		<title></title>
+		<script>
+			function change_1(){
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="孩子，爸爸过段时间就能回家陪你了";
+						var elent_2=document.getElementById("beijing");
+						elent_2.style.backgroundImage="url(img/医院/气泡框3.png)";
+					},1000)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("hushi");
+						elent_1.style.backgroundImage="url('img/医院/护士.png')";
+					},3000)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="医院又新增了一名肺炎病人，院长叫你过去";
+						var elent_2=document.getElementById("beijing");
+						elent_2.className="bj_1";
+					},4500)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="我马上过去";
+						var elent_2=document.getElementById("beijing");
+						elent_2.className="bj";
+					},6500)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("hushi");
+						elent_1.style.backgroundImage="url(img/小区/空白.png)";
+					},7500)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="孩子，爸爸现在要去帮助别人对抗病毒了";
+						var elent_2=document.getElementById("beijing");
+						elent_2.className="bj";
+					},9000)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="对不起，爸爸又要过几天才回家陪你了";
+						},11000)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="";
+						var elent_2=document.getElementById("beijing");
+						elent_2.style.backgroundImage="url(img/小区/空白1.png)"
+						var elent_3=document.getElementById("dianji");
+						elent_3.innerHTML="点击手机"
+						var elent_4=document.getElementById("shouji");
+						elent_4.onclick=function change_2(){
+				var elent_1=document.getElementById("main");
+				elent_1.style.backgroundImage="url(img/医院/孩子.png)";
+				var elent_2=document.getElementById("dianji");
+				elent_2.innerHTML="";
+				setTimeout(
+					function(){
+						var elent_3=document.getElementById("beijing");
+				        elent_3.style.backgroundImage="url(img/医院/气泡框3.png)";
+				        var elent_4=document.getElementById("text");
+				        elent_4.innerHTML="爸爸，忙去吧";
+						},2000)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="我和妈妈在家里等你回来";
+						},4000)
+				setTimeout(
+					function(){
+						var elent_1=document.getElementById("text");
+						elent_1.innerHTML="";
+						var elent_3=document.getElementById("beijing");
+				        elent_3.style.backgroundImage="url(img/医院/空白.png)";
+				        var elent_2=document.getElementById("dianji");
+				        elent_2.innerHTML="点击屏幕";
+				        var elent_5=document.getElementById("shouji");
+						elent_5.onclick=function f(){}
+				        var elent_4=document.getElementById("body");
+				        body.onclick=function change_3(){
+				window.location.href="捐赠.html";
+			}
+						},6000)
+			 }
+						},13000)
+				
+			}
+			
+			
+		</script>
+	</head>
+	<body id="body" onload="change_1()" onclick="">
+		<div id="main" >
+			<a id="dianji" class="animated pulse" style="font-size: 50px;font-family:'华文琥珀'; color: cornflowerblue;align-content: center;margin-left: 40%;"></a>
+			<div id="beijing" class="bj" >
+				<div id="text"  style="font-family: '微软雅黑';font-size: 25px;margin: 5px;"></div>
+			</div>
+			<div id="shouji" onclick="" style="width: 100px;height: 100px;position: absolute;margin-left: 220px;margin-top: 220px;"></div>
+			<div id="hushi" class="hushi" style="background-image: url(img/小区/空白1.png);height: 800px;width: 270px;background-size: 270px 800px;margin-top: 180px;">	
+			</div>
+			
+		</div>
+		
+		
+	</body>
+	<style>
+		body{
+			margin: 0;
+		}
+		#main{
+			background-image: url(img/医院/办公室.jpg);
+			height: 1030px;
+			width: 640px;
+			background-size: 640px 1030px;
+			position: absolute;
+		}
+		.bj{
+			background-image: url(img/小区/空白1.png);
+			width: 200px;
+			height: 150px;
+			margin-left: 280px;
+			margin-top: 60px;
+			background-size: 200px 150px;
+			position: absolute;
+		}
+		.bj_1{
+			background-image: url(img/医院/气泡框3.png);
+			width: 200px;
+			height: 150px;
+			float: left;
+			margin-bottom: 100px;
+			margin-top: 80px;
+			background-size: 200px 150px;
+			margin-right: 170px;
+		}
+		#dianji{
+			animation-duration: 2s;
+			animation-play-state: running;
+		}
+	</style>
+</html>
